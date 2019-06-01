@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+mainClassName = 'CommonsSampleMain'
+
+repositories {
+	mavenCentral()
+}
+
+jar{
+	baseName = 'sampleCommons-gradle'
+	version = '0.1.0'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies{
+	compile 'commons-io:commons-io:2.6'
+	compile 'org.apache.commons:commons-lang3:3.7'
+	compile 'commons-beanutils:commons-beanutils:1.9.3'
+
+}
